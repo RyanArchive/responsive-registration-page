@@ -6,124 +6,128 @@
 		<title>Responsive Registration Page</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 	</head>
 
 	<body>
 
-		<div class="row">
-			<div class="column-2 hidden"></div>
+		<div class="registration-container">
+			<div class="row">
+				<div class="column-2 pad-only"></div>
 
-			<div class="column-8 registration">
-				<form>
-					<div class="row">
-						<div class="column-12 title">
-							Basic Information
-						</div>
-					</div>
-					<div class="row">
-						<div class="column-4">
-							First name
-							<input type="text" maxlength="30" placeholder="Your first name" required />
-						</div>
-						<div class="column-4">
-							Middle name
-							<input type="text" maxlength="30" placeholder="Your middle name" required />
-						</div>
-						<div class="column-4">
-							Last name
-							<input type="text" maxlength="30" placeholder="Your last name" required />
-						</div>
-					</div>
-					<div class="row">
-						<div class="column-4">
-							Gender
-							<div class="input-gender">
-								<input type="radio" id="male" name="gender" value="male" />
-								<label for="male">Male</label>
-								<input type="radio" id="female" name="gender" value="female" />
-								<label for="female">Female</label>
+				<div class="column-8 registration">
+					<form>
+						<div class="row">
+							<div class="column-12 title">
+								Basic Information
 							</div>
 						</div>
-						<div class="column-4">
-							Birth date
-							<input type="date" required />
+						<div class="row">
+							<div class="column-4">
+								First name
+								<input type="text" maxlength="30" placeholder="Your first name" required />
+							</div>
+							<div class="column-4">
+								Middle name
+								<input type="text" maxlength="30" placeholder="Your middle name" required />
+							</div>
+							<div class="column-4">
+								Last name
+								<input type="text" maxlength="30" placeholder="Your last name" required />
+							</div>
 						</div>
-					</div>
-					<div class="row">
-						<div class="column-4">
-							Email
-							<input type="email" maxlength="60" placeholder="email@domain.com" required />
+						<div class="row">
+							<div class="column-4">
+								Gender
+								<div class="input-gender">
+									<input type="radio" id="male" name="gender" value="male" />
+									<label for="male">Male</label>
+									<input type="radio" id="female" name="gender" value="female" />
+									<label for="female">Female</label>
+								</div>
+							</div>
+							<div class="column-4">
+								Birth date
+								<input type="date" required />
+							</div>
 						</div>
-						<div class="column-4">
-							Mobile number
-							<input type="number" maxlength="11" placeholder="09123456789" required />
+						<div class="row">
+							<div class="column-4">
+								Email
+								<input type="email" maxlength="60" placeholder="email@domain.com" required />
+							</div>
+							<div class="column-4">
+								Mobile number
+								<input type="number" maxlength="11" placeholder="09123456789" required />
+							</div>
+							<div class="column-4">
+								Telephone (Optional)
+								<input type="number" maxlength="7" placeholder="1234567" />
+							</div>
 						</div>
-						<div class="column-4">
-							Telephone (Optional)
-							<input type="number" maxlength="7" placeholder="1234567" />
+						<div class="row">
+							<div class="column-12 title">
+								Current Address
+							</div>
 						</div>
-					</div>
-					<div class="row">
-						<div class="column-12 title">
-							Current Address
+						<div class="row">
+							<div class="column-4">
+								House/Unit Number
+								<input type="text" maxlength="10" required />
+							</div>
+							<div class="column-4">
+								Street
+								<input type="text" maxlength="50" required />
+							</div>
+							<div class="column-4">
+								Barangay
+								<input type="text" maxlength="50" required />
+							</div>
 						</div>
-					</div>
-					<div class="row">
-						<div class="column-4">
-							House/Unit Number
-							<input type="text" maxlength="10" required />
+						<div class="row">
+							<div class="column-4">
+								Province
+								<input type="text" maxlength="50" required />
+							</div>
+							<div class="column-4">
+								Region
+								<input type="text" maxlength="50" required />
+							</div>
 						</div>
-						<div class="column-4">
-							Street
-							<input type="text" maxlength="50" required />
+						<div class="row">
+							<div class="column-12 title">
+								Account Information
+							</div>
 						</div>
-						<div class="column-4">
-							Barangay
-							<input type="text" maxlength="50" required />
+						<div class="row">
+							<div class="column-4">
+								Username
+								<input type="text" maxlength="30" placeholder="Your username" required />
+							</div>
+							<div class="column-4">
+								Password
+								<input type="password" maxlength="30" placeholder="Your password" required />
+							</div>
+							<div class="column-4">
+								Confirm password
+								<input type="password" maxlength="30" placeholder="Your password" required />
+							</div>
 						</div>
-					</div>
-					<div class="row">
-						<div class="column-4">
-							Province
-							<input type="text" maxlength="50" required />
+						<div class="row">
+							<div class="column-4 pad-only"></div>
+							<div class="column-2">
+								<input type="reset" value="Reset" />
+							</div>
+							<div class="column-2">
+								<input type="submit" value="Submit" />
+							</div>
+							<div class="column-4 pad-only"></div>
 						</div>
-						<div class="column-4">
-							Region
-							<input type="text" maxlength="50" required />
-						</div>
-					</div>
-					<div class="row">
-						<div class="column-12 title">
-							Account Information
-						</div>
-					</div>
-					<div class="row">
-						<div class="column-4">
-							Username
-							<input type="text" maxlength="30" placeholder="Your username" required />
-						</div>
-						<div class="column-4">
-							Password
-							<input type="password" maxlength="30" placeholder="Your password" required />
-						</div>
-						<div class="column-4">
-							Confirm password
-							<input type="password" maxlength="30" placeholder="Your password" required />
-						</div>
-					</div>
-					<div class="row">
-						<div class="column-4">
-							<input type="reset" value="Reset" />
-						</div>
-						<div class="column-4">
-							<input type="submit" value="Submit" />
-						</div>
-					</div>
-				</form>
-			</div>
+					</form>
+				</div>
 
-			<div class="column-2 hidden"></div>
+				<div class="column-2 pad-only"></div>
+			</div>
 		</div>
 		
 	</body>

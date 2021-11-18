@@ -3,9 +3,7 @@
 
 :root {
 	--dark-cyan-blue: #0B2343;
-	--gray: #808080;
 	--light-brown: #F4DCBC;
-	--light-cyan: F3FAFD;
 	--white: #FFFFFF;
 }
 
@@ -41,21 +39,61 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-	.column-1 { width: 8.33% }
-	.column-2 { width: 16.66% }
-	.column-3 { width: 25% }
-	.column-4 { width: 33.33% }
-	.column-5 { width: 41.66% }
-	.column-6 { width: 50% }
-	.column-7 { width: 58.33% }
-	.column-8 { width: 66.66% }
-	.column-9 { width: 75% }
-	.column-10 { width: 83.33% }
-	.column-11 { width: 91.66% }
-	.column-12 { width: 100% }
+	.column-1 {
+		width: 8.33%
+	}
+
+	.column-2 {
+		width: 16.66%
+	}
+
+	.column-3 {
+		width: 25%
+	}
+
+	.column-4 {
+		width: 33.33%
+	}
+
+	.column-5 {
+		width: 41.66%
+	}
+
+	.column-6 {
+		width: 50%
+	}
+
+	.column-7 {
+		width: 58.33%
+	}
+
+	.column-8 {
+		width: 66.66%
+	}
+
+	.column-9 {
+		width: 75%
+	}
+
+	.column-10 {
+		width: 83.33%
+	}
+
+	.column-11 {
+		width: 91.66%
+	}
+
+	.column-12 {
+		width: 100%
+	}
 }
 
 /* Registration */
+
+.registration-container {
+	margin-bottom: 48px;
+	margin-top: 48px;
+}
 
 .registration {
 	background-color: var(--white);
@@ -92,4 +130,43 @@ input[type='password'] {
 	padding-right: 12px;
 	padding-top: 9px;
 	width: 100%;
+}
+
+.input-gender label {
+	margin-right: 9px;
+}
+
+input[type='submit'],
+input[type='reset'] {
+	border: solid 2px var(--dark-cyan-blue);
+	border-radius: 6px;
+	height: 39px;
+	margin-top: 9px;
+	width: 100%;
+}
+
+input[type='submit'] {
+	background-color: var(--dark-cyan-blue);
+	color: var(--white);
+}
+
+input[type='reset'] {
+	background-color: var(--light-cyan);
+	color: var(--dark-cyan-blue);
+}
+
+input[type='submit']:hover,
+input[type='reset']:hover {
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+	.pad-only {
+		padding: 0;
+	}
+
+	.registration-container {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
 }
